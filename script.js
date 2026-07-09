@@ -20,7 +20,6 @@ function searchLargest(arr) {
         return "Array should have at least two numbers";
     }
 
-
     for (let i = 0; i < arr.length; i++) {
 
         if (arr[i] > largest) {

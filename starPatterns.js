@@ -109,7 +109,6 @@ for (let i = 0; i < 5; i++) {
 
 // 1 0 1 0 1
 
-
 let n = 10;
 
 let switchVar = 1;
