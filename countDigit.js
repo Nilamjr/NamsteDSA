@@ -30,6 +30,6 @@ function countDigits(n) {
 let num = 0;
 let result = countDigits(num);
 
-console.log(result);
+// console.log(result);
 
 
