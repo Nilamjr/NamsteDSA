@@ -12,13 +12,13 @@ function CheckPalindrome(x){
         x = Math.floor(x / 10);
     }
 
-    // if (xCopy === rev) {
-    //     return true;
-    // } else {
-    //     return false;
-    // }
+    if (xCopy === rev) {
+        return true;
+    } else {
+        return false;
+    }
 
-    return rev === xCopy;
+    // return rev === xCopy;
 }
 
 let res = CheckPalindrome(1221);
