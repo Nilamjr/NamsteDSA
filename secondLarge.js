@@ -1,6 +1,3 @@
-// script.js
-
-let arrSeconLarge = [40, 50, 3, 34, 67, 24, 679, 232, 533, 644];
 
 let findSecondLargest = function (x) {
 
@@ -9,16 +6,17 @@ let findSecondLargest = function (x) {
 
     for (let i = 0; i < x.length; i++) {
         if (x[i] > large) {
-            secondLargest == large;
-            large == x[i];
+            secondLargest = large;
+            large = x[i];
         }
-        if (x[i] > secondLargest) {
-            secondLargest == x[i];
+        else if (x[i] > secondLargest) {
+            secondLargest = x[i];
         }
     }
     return secondLargest;
 }
 
-let result = findSecondLargest(arrSeconLarge);
-
+let arrSecondLarge = [40, 50, 3, 34, 67, 24, 679, 232, 533, 644];
+let result = findSecondLargest(arrSecondLarge);
+// 
 console.log(result);
