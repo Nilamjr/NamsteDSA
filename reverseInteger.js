@@ -44,3 +44,23 @@ let num = 57897;
 
 let arrFindSecondLarge = [90,4,2,65,75,23,6,8,3];
 
+
+// practicing 
+
+let reverseInt = function(num) { 
+
+    let rev = 0;
+
+    while (num > 0) {
+       let last = num % 10;
+        rev = 10*rev + last; 
+        num = Math.floor(num / 10);
+    }
+
+    return rev;
+
+}
+
+let numb = 54321;
+let reu = reverseInt(numb);
+console.log(reu);
