@@ -15,7 +15,7 @@ for (let i = 0; i < n; i++) {
 
         row = row + "*";
         console.log(row + i);
-        // console.log("i=" + i + "j=" + j);
+        console.log("i=" + i + "j=" + j);
     }
 }
 
