@@ -8,16 +8,26 @@
 
 let n = 5;
 
-
-for (let i = 0; i < n; i++) {
+for (let i = 0; i <= 6; i++) {
     let row = "";
-    for (let j = 0; j < n - i; i++) {
-
-        row = row + "*";
-        console.log(row + i);
-        console.log("i=" + i + "j=" + j);
+    for (let j = 0; j < n-i; i++) {
+        row = row + i;
+        console.log(row);
     }
+    console.log(i);
 }
+
+
+
+
+// i   j    n - i 
+ 
+// 0   0    5 - 0 = 5
+// 1   0    5 - 1 = 4
+
+
+
+// 0
 
 
 
