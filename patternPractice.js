@@ -8,13 +8,13 @@
 
 let n = 5;
 
-for (let i = 0; i <= 6; i++) {
+for (let i = 0; i < n; i++) {
     let row = "";
     for (let j = 0; j < n-i; i++) {
         row = row + i;
-        console.log(row);
+        console.log(i);
     }
-    console.log(i);
+    // console.log(i);
 }
 
 
@@ -23,7 +23,7 @@ for (let i = 0; i <= 6; i++) {
 // i   j    n - i 
  
 // 0   0    5 - 0 = 5
-// 1   0    5 - 1 = 4
+// 
 
 
 
