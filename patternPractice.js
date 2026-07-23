@@ -12,7 +12,7 @@ for (let i = 0; i < n; i++) {
     let row = "";
     for (let j = 0; j < n-i; i++) {
         row = row + i;
-        console.log(i);
+        console.log(row);
     }
     // console.log(i);
 }
@@ -20,14 +20,15 @@ for (let i = 0; i < n; i++) {
 
 
 
-// i   j    n - i 
+
+// i   j    n - i        row
  
-// 0   0    5 - 0 = 5
-// 
+// 0   0    5 - 0 = 5    0
+// 1   0    5-1 = 4      0 1
+// 2   0    5-2 = 3      0 1 2
+// 3   0    5-3 = 2      0 1 2 3
+// 4   0    5-4 = 1      0 1 2 3 4
 
-
-
-// 0
 
 
 
