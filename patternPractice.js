@@ -6,19 +6,69 @@
 //  * * *
 //* * * *
 
-let n = 5;
-
+let n = 4;
 for (let i = 0; i < n; i++) {
     let row = "";
-    for (let j = 0; j < n-i; i++) {
-        row = row + i;
-        console.log(row);
+
+    for(let k = 0; k < n ; k++) {
+        row = row + "";
     }
-    // console.log(i);
+    for (let j = 0; j < n-i; j++) {
+        // row = row + j;
+        row = row + "*";
+    }
 }
+// n=4
+// i  space    star    
+// 0  3       1
+// 1  2       2
 
 
 
+// **************************************
+// let n = 5;
+
+// for (let i = 0; i < n; i++) {
+//     let row = "";
+//     for (let j = 0; j < n-i; j++) {
+//         // row = row + j;
+//         row = row + "*";
+//         // console.log(row);
+//     }
+//     // console.log(i);
+// }
+
+
+// DRY RUN
+// if i<n ; j < n - i 
+
+// if console.log outside the second loop
+
+// i  j       n-i    row          if print"*"
+// 0  01234   5-0=5  0 1 2 3 4    *****
+// 1  0123    5-1=4  0 1 2 3      ****
+// 2  012     5-2=3  0 1 2        ***
+// 3  01      5-3=2  0 1          **
+// 4  0       5-4=1  0            *
+
+// cosole.log inside the second loop
+
+// i  j   n-i        row
+// 0  0   5-0 = 5    0
+//    1  5-0 = 5     0 1
+//    2  5-0 = 5     0 1 2
+//    3  5-0 = 5     0 1 2 3
+//    4  5-0 = 5     0 1 2 3 4
+// 1  0  5-1 = 4     0
+// 1  1  5-1 = 4     0 1
+// 1  2  5-1 = 4     0 1 2
+// 1  3  5-1 = 4     0 1 2 3
+// 2  0  5-2 = 3     0
+// 2  1  5-2 = 3     0 1
+// 2  2  5-2 = 3     0 1 2
+// 3  0  5-3 = 2     0
+// 3  1  5-3 = 2     0 1
+// 4  0  5-4 = 1     0
 
 
 // i   j    n - i        row
