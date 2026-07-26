@@ -1,25 +1,57 @@
 // pattern.js
 
 
+
+// *
+// **
+// ***
+// ****
+
+n = 4;
+
+for(let i=0; i<n; i++){
+let row = "";
+ for(let j=0;j<=i;j++){
+     row = row + "*";
+    }
+    console.log(row);
+}
+
+
+
+// i   j   row
+// 0   0   *
+// 1   0   *    
+//     1   **
+// 2   0   *
+//     1   ** 
+//     2   ***
+// 3   0   *
+//     1   **
+//     2   ***
+//     3   **** 
+
+
+
 //      *
 //    * *
 //  * * *
 //* * * *
 
-let n = 4;
-for (let i = 0; i < n; i++) {
-    let row = "";
-    for(let k = 0; k < n-i-1 ; k++) {
-        row = row + " ";
-        // console.log(row);
-    }
-    for (let j = 0; j < i+1; j++) {
-        // row = row + j;
-        row = row + "*";
-    }
-    // console.log("Its n-i+1==",  n-i+1);
-    console.log(row);
-}
+// let n = 4;
+// for (let i = 0; i < n; i++) {
+//     let row = "";
+//     for(let k = 0; k < n-i-1 ; k++) {
+//         row = row + " ";
+//         // console.log(row);
+//     }
+//     for (let j = 0; j < i+1; j++) {
+//         // row = row + j;
+//         row = row + "*";
+//     }
+//     // console.log("Its n-i+1==",  n-i+1);
+//     console.log(row);
+// }
 // n=4
 // i  space    star  k  j  n-i-1    i+1    row     
 // 0  3        1     0     4-0-1=3         _
