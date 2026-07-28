@@ -1,6 +1,57 @@
 // pattern.js
 
 
+// 28/07/2026
+let row = "";
+
+let n = 5;
+
+for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n - i; i++) {
+        row = row + "*";
+    }
+    console.log(row);
+}
+
+// i   j  n-i    row
+// 0   0  5-0=5  *
+//     1  < 5    * *
+//     2  < 5    * * *
+//     3  < 5    * * * *
+//     4  < 5    * * * * *
+// 1
+
+
+// *****
+// ****
+// ***
+// **
+// *
+
+// let n = 5;
+
+// for (let i = 0; i < n; i++){
+//     let row = "";
+//     for (let j = 0; j < n-i; j++){
+//         row = row + "*";
+//     }
+//     console.log(row);
+// }
+
+
+
+
+
+// i j star
+// 0   5      n
+// 1   4      n-1
+// 2   3      n-2
+// 3   2      n-3
+// 4   1      n-4  
+
+
+
+
 //      1
 //     12
 //    123
@@ -8,24 +59,22 @@
 //  12345
 // 123456
 
-
-let n = 6;
-for(let i=0; i<n; i++){
-  let row = "";
-  for(let j=0; j<n-i-1; j++){
-    row = row + " " ;
-  }
-  for(let k=0; k<i+1; k++){
-    row = row + (k+1);
-  }
-  console.log(row);
-}
+// let n = 6;
+// for(let i=0; i<n; i++){
+//   let row = "";
+//   for(let j=0; j<n-i-1; j++){ 
+//     row = row + " " ;
+//   }
+//   for(let k=0; k<i+1; k++){
+//     row = row + (k+1);
+//   }
+//   console.log(row);
+// }
 
 // n=6
 // i space digit 
 // 0 5     1
 // 1 4     2
-
 
 // *
 // **
