@@ -1,17 +1,39 @@
 // pattern.js
 
-
-// 28/07/2026
-let row = "";
-
+// 29/07/2026
 let n = 5;
 
 for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n - i; i++) {
+let row = "";
+    for (let j = 0; j < n - i; j++) {
         row = row + "*";
+        // console.log("its an I", i);
+        // console.log("its a J", j);
     }
-    console.log(row);
+        console.log(row);
 }
+
+// i   j  n-i    row     i
+// 0   0  5-0=5  *       
+//     0  5-1=4  **     1
+//     0  5-2=3  ***   2
+//    0  5-3=3   ****   3
+//     0  5-4=1  *****  4
+
+
+
+// 28/07/2026
+// let row = "";
+
+// let n = 5;
+
+// In nested loop we incresed i not j and checked output
+// for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n - i; i++) {
+//         row = row + "*";
+//     }
+//     console.log(row);
+// }
 
 // i   j  n-i    row
 // 0   0  5-0=5  *
