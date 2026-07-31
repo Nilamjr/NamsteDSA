@@ -1,17 +1,44 @@
 // pattern.js
 
-// 29/07/2026
-let n = 5;
 
-for (let i = 0; i < n; i++) {
-let row = "";
-    for (let j = 0; j < n - i; j++) {
-        row = row + "*";
-        // console.log("its an I", i);
-        // console.log("its a J", j);
-    }
-        console.log(row);
-}
+
+// 31st Aug 
+
+// pattern.js
+
+
+//      *
+//     * *
+//    * * *
+//   * * * *
+
+// 
+// n  i  space   star  space star
+// 4  1  3       1
+//    2  2     
+
+
+
+
+
+
+
+
+
+
+
+// 29/07/2026
+// let n = 5;
+
+// for (let i = 0; i < n; i++) {
+// let row = "";
+//     for (let j = 0; j < n - i; j++) {
+//         row = row + "*";
+//         // console.log("its an I", i);
+//         // console.log("its a J", j);
+//     }
+//         console.log(row);
+// }
 
 // i   j  n-i    row     i
 // 0   0  5-0=5  *       
