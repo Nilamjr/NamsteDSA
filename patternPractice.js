@@ -12,12 +12,26 @@
 //    * * *
 //   * * * *
 
-// 
-// n  i  space   star  space star
-// 4  1  3       1
-//    2  2     
+let n = 4;
+for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = 0; j < n - i; j++) {
+        row = row + " ";
+    }
+
+    for(let k = 0; k < i+1; k++){
+        row = row + "* "
+    }
+
+    console.log(row);
+}
 
 
+// n  i  space   star  
+// 4  0  3       1
+//    1  2       2     
+//    2  1       3
+//    3  0       4
 
 
 

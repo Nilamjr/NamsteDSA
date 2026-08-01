@@ -3,22 +3,22 @@
 
 // removeDuplicate.js
 
-let removeDuplicates = function(nums) {
-    let x = 0;
-    for (let i = 0; i < nums.length; i++) {
+// let removeDuplicates = function(nums) {
+//     let x = 0;
+//     for (let i = 0; i < nums.length; i++) {
         
-        if (nums[i] > nums[x]) {
-            x = x + 1;
-            nums[x] = nums[i];
-        }
-    }
-    return x + 1;
-}
+//         if (nums[i] > nums[x]) {
+//             x = x + 1;
+//             nums[x] = nums[i];
+//         }
+//     }
+//     return x + 1;
+// }
 
-let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]; 
-let result = removeDuplicates(nums);
+// let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]; 
+// let result = removeDuplicates(nums);
 
-console.log(result);
+// console.log(result);
 
 // nums = [0]
 // nums = [0,1]
@@ -40,3 +40,30 @@ console.log(result);
 // 2   7   3         2          3 > 2                2+1=3    3
 // 3   8   3         3          3 > 3
 // 3   9   4         3          4 > 3                3+1=4    4
+
+
+
+
+
+
+
+// 
+//
+let arr = [3,2,4,2,4,2,4,4,3,2,1,5,2];
+let val = 4;
+let abc = function(arr){
+    let x = 0;
+    for(let i = 0; i < arr.length; i++){
+        if (arr[i] != val) {
+            
+            arr[x] = arr[i];
+            console.log("before",arr[x]);
+            x = x + 1;
+            console.log("after",arr[x]);
+        }
+    }
+    return x;
+}
+
+let result = abc(arr);
+console.log(result);
