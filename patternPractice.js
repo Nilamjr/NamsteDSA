@@ -1,8 +1,24 @@
 // pattern.js
 
 
+// 2nd August
+//     1
+//    1 2
+//   1 2 3
+//  1 2 3 4  
+let n = 4
+for(let i=0; i<n; i++){
+    let row = "";
+    for(let k=0; k < n-i-1; k++){
+        row = row + " ";
+    }
+    for(let j = 0; j<i+1; j++){
+        row = row + (j+1) + " ";
+    }
+    console.log(row);
+}
 
-// 31st Aug 
+// 31st July / 1st August 2026
 
 // pattern.js
 
@@ -12,36 +28,34 @@
 //    * * *
 //   * * * *
 
-let n = 4;
-for (let i = 0; i < n; i++) {
-    let row = "";
-    for (let j = 0; j < n - i; j++) {
-        row = row + " ";
-    }
+// let n = 4;
+// for (let i = 0; i < n; i++) {
+//     let row = "";
+//     for (let j = 0; j < n-i-1; j++) {
+//         row = row + "_";
+//     }
 
-    for(let k = 0; k < i+1; k++){
-        row = row + "* "
-    }
+//     for(let k = 0; k < i+1; k++){
+//         row = row + "* "
+//     }
 
-    console.log(row);
-}
+//     console.log(row);
+// }
 
-
+// DRY RUN
 // n  i  space   star  
 // 4  0  3       1
 //    1  2       2     
 //    2  1       3
 //    3  0       4
 
-
-
-
-
-
-
-
-
 // 29/07/2026
+
+// *****
+// ****
+// ***
+// **
+// *
 // let n = 5;
 
 // for (let i = 0; i < n; i++) {
@@ -54,6 +68,8 @@ for (let i = 0; i < n; i++) {
 //         console.log(row);
 // }
 
+// DRY RUN
+
 // i   j  n-i    row     i
 // 0   0  5-0=5  *       
 //     0  5-1=4  **     1
@@ -62,12 +78,10 @@ for (let i = 0; i < n; i++) {
 //     0  5-4=1  *****  4
 
 
-
 // 28/07/2026
 // let row = "";
 
 // let n = 5;
-
 // In nested loop we incresed i not j and checked output
 // for (let i = 0; i < n; i++) {
 //     for (let j = 0; j < n - i; i++) {
@@ -102,9 +116,6 @@ for (let i = 0; i < n; i++) {
 // }
 
 
-
-
-
 // i j star
 // 0   5      n
 // 1   4      n-1
@@ -113,8 +124,7 @@ for (let i = 0; i < n; i++) {
 // 4   1      n-4  
 
 
-
-
+// PATTERN 
 //      1
 //     12
 //    123
@@ -154,8 +164,6 @@ for (let i = 0; i < n; i++) {
 //     console.log(row);
 // }
 
-
-
 // i   j   row
 // 0   0   *
 // 1   0   *    
@@ -167,8 +175,6 @@ for (let i = 0; i < n; i++) {
 //     1   **
 //     2   ***
 //     3   **** 
-
-
 
 //      *
 //    * *
