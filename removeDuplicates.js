@@ -1,3 +1,28 @@
+// 4th Aug 
+
+
+// one pointer for iterate throught array to find any element in an array
+// second pointer or element where it should be placed
+
+let array1 = [1,2,2,2,2,3,4,4,4,4,5,6,7];
+let removeDuplicate = function (arr) {
+    let x = 0;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > arr[x]) {
+            x = x + 1;
+            arr[x] = arr[i];
+        }
+    }
+    // return arr;
+    return x + 1;
+}
+
+let removeDupli = removeDuplicate(array1);
+console.log(removeDupli);
+
+
+
+
 
 // 30th Aug 2026
 
@@ -49,21 +74,21 @@
 
 // 
 //
-let arr = [3,2,4,2,4,2,4,4,3,2,1,5,2];
-let val = 4;
-let abc = function(arr){
-    let x = 0;
-    for(let i = 0; i < arr.length; i++){
-        if (arr[i] != val) {
+// let arr = [3,2,4,2,4,2,4,4,3,2,1,5,2];
+// let val = 4;
+// let abc = function(arr){
+//     let x = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if (arr[i] != val) {
             
-            arr[x] = arr[i];
-            console.log("before",arr[x]);
-            x = x + 1;
-            console.log("after",arr[x]);
-        }
-    }
-    return x;
-}
+//             arr[x] = arr[i];
+//             console.log("before",arr[x]);
+//             x = x + 1;
+//             console.log("after",arr[x]);
+//         }
+//     }
+//     return x;
+// }
 
-let result = abc(arr);
-console.log(result);
+// let result = abc(arr);
+// console.log(result);
