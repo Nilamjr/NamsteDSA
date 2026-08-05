@@ -4,7 +4,7 @@
 
 // [0, 1, 0, 3, 12]
 
-let array3 = [0, 1, 0, 3, 12];
+let array3 = [5,2,0, 1, 0, 3, 12];
 
 let moveZeros = function(arr){
     let x = 0;    
