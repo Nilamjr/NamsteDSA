@@ -1,24 +1,117 @@
-// 4th Aug 
+// 5th August 2026
 
+// (Move Zeroes to the end )
+
+// [0, 1, 0, 3, 12]
+
+let array3 = [0, 1, 0, 3, 12];
+
+let moveZeros = function(arr){
+    let x = 0;    
+    for(let i = 0; i < arr.length; i++){
+        
+        if(arr[i] != 0){
+            arr[x] = arr[i];
+            arr[i] = 0;
+            x = x + 1;
+        }
+    }
+    return arr;
+}
+
+let movZero = moveZeros(array3);
+console.log(movZero);
+//  x
+// [0, 1, 0, 3, 12]
+//     i
+//     x
+// [1, 0, 0, 3, 12]
+//        i
+//     x
+// [1, 0, 0, 3, 12]
+//           i
+//        x
+// [1, 3, 0, 0, 12]
+//              i
+// [1, 3, 12, 0, 0 ]
+
+
+
+// REMOVE AN ELEMENT FROM AN ARRAY 
+
+let val= 3
+let array2 = [3,2,3,3,2];
+
+let removeanElemt = function(arr){
+    let x = 0;    
+    for(let i = 0; i < arr.length; i++){
+        
+        if(arr[i] != val){
+            arr[x] = arr[i];
+            x = x + 1;
+        }
+    }
+    return arr;
+}
+
+let remEle = removeanElemt(array2);
+// console.log(remEle);
+
+
+// DRY RUN 
+// val= 3   
+//          x
+// array = [3,2,3,3,2];
+//          i
+         
+//          x
+// array = [3,2,3,3,2];
+//            i!=val        
+//         array[x] = array[i]
+//         3 = 2 
+//            x    
+// array = [2,2,3,3,2];
+//              i
+//            x  
+// array = [2,2,3,3,2]
+//                i
+//            x  
+// array = [2,2,3,3,2]
+//                  i != val
+//              x
+// array = [2,2,3,3,2]                
+                 
+
+
+
+
+// 4th Aug 
 
 // one pointer for iterate throught array to find any element in an array
 // second pointer or element where it should be placed
 
-let array1 = [1,2,2,2,2,3,4,4,4,4,5,6,7];
+// let array1 = [1,2,2,2,2,3,4,4,4,4,5,6,7];
+
+let array1 = [1,2,2,3,3,4,5,6,6,6,7,8,8,8,8,9,10];
 let removeDuplicate = function (arr) {
     let x = 0;
+    // let row = "";
     for (let i = 0; i < arr.length; i++){
+        // console.log("i" , arr[i]);
+        // console.log("x value = " + arr[x] + " i value = " + arr[i]);
+        // console.log("row", row); 
+        
         if (arr[i] > arr[x]) {
             x = x + 1;
             arr[x] = arr[i];
         }
     }
-    // return arr;
-    return x + 1;
+    return arr;
+    // return x + 1;
 }
 
 let removeDupli = removeDuplicate(array1);
-console.log(removeDupli);
+// console.log("Duplicate removed", removeDupli);
 
 
 
