@@ -1,5 +1,14 @@
 // Star patterns
 
+//  ******
+//   ****
+//    **
+//     *
+
+
+
+
+
 // for (let i = 0; i < 2; i++) {
 //     let row = " "
 //     for (let j = 0; j < 4; j++) {
