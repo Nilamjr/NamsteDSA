@@ -20,7 +20,7 @@ let moveZeros = function(arr){
 }
 
 let movZero = moveZeros(array3);
-console.log(movZero);
+// console.log(movZero);
 //  x
 // [0, 1, 0, 3, 12]
 //     i
@@ -40,26 +40,43 @@ console.log(movZero);
 // REMOVE AN ELEMENT FROM AN ARRAY 
 
 let val= 3
-let array2 = [3,2,3,3,2];
+let array2 = [3,2,3,3,2,4,3,2]; 
 
 let removeanElemt = function(arr){
     let x = 0;    
+    // let arr1 = [];
     for(let i = 0; i < arr.length; i++){
-        
         if(arr[i] != val){
             arr[x] = arr[i];
             x = x + 1;
         }
     }
-    return arr;
+    return arr1;
 }
 
 let remEle = removeanElemt(array2);
-// console.log(remEle);
+console.log(remEle);
 
 
 // DRY RUN 
 // val= 3   
+
+//  x
+// [3,2,3,3,2,4,3,2]
+//  0
+
+//        x
+// [3,2,3,3,2,4,3,2]
+//                7
+// 2,2,3,3,2,4,3,2
+
+// 2,2,3,3,2,4,3,2
+
+// 2,2,4,3,2,4,3,2
+
+// 2,2,4,2,2,4,3,2
+
+
 //          x
 // array = [3,2,3,3,2];
 //          i
@@ -91,7 +108,7 @@ let remEle = removeanElemt(array2);
 // second pointer or element where it should be placed
 
 // let array1 = [1,2,2,2,2,3,4,4,4,4,5,6,7];
-
+// array in non-decreasing
 let array1 = [1,2,2,3,3,4,5,6,6,6,7,8,8,8,8,9,10];
 let removeDuplicate = function (arr) {
     let x = 0;
@@ -106,8 +123,8 @@ let removeDuplicate = function (arr) {
             arr[x] = arr[i];
         }
     }
-    return arr;
-    // return x + 1;
+    // return arr;
+    return x + 1;
 }
 
 let removeDupli = removeDuplicate(array1);
