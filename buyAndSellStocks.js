@@ -11,25 +11,25 @@
 //     }
 // }
 
-let prices = [11,3,7,3,5,7,6,1,4];
-let buyAndSellStock = function(prices){
+// let prices = [11,3,7,3,5,7,6,1,4];
+// let buyAndSellStock = function(prices){
 
-    let min = prices[0];
-    let maxProfit = 0;   
-    for(let i = 1; i < prices.length; i++){
+//     let min = prices[0];
+//     let maxProfit = 0;   
+//     for(let i = 1; i < prices.length; i++){
             
-        if(prices[i]-min > maxProfit){
-            maxProfit = prices[i]-min;
-        }
-        if(prices[i] < min){
-            min = prices[i];
-        }
-    }
-    return maxProfit;
-  }
+//         if(prices[i]-min > maxProfit){
+//             maxProfit = prices[i]-min;
+//         }
+//         if(prices[i] < min){
+//             min = prices[i];
+//         }
+//     }
+//     return maxProfit;
+//   }
 
-  let result = buyAndSellStock(prices);
-  console.log(result);
+//   let result = buyAndSellStock(prices);
+//   console.log(result);
 
 
 
