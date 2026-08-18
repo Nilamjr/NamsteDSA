@@ -78,7 +78,7 @@
 
 
 let nums1 = [1,2,3];
-let nums2 = [2,5,8];
+let nums2 = [2,5,7];
 
 function merge(nums1, m, nums2, n){
     
@@ -87,7 +87,7 @@ function merge(nums1, m, nums2, n){
     let p2 = 0;
 
     for(let i = 0; i < m+n; i++){
-        if(nums1Copy[p1] < nums2[p2]){
+        if(( p2 >= n || p1 < m && nums1Copy[p1] < nums2[p2])){
             nums1[i] = nums1Copy[p1];
             p1++;
         }
