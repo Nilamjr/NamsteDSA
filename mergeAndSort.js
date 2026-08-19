@@ -20,6 +20,35 @@
 
 
 
+
+// BEST APPROACH
+
+nums1 = [1,2,3,0,0,0];
+nums2 = [2,5,6];
+
+let merge = function(nums1, m, nums2, n){
+    let p1 = m-1;
+    let p2 = n-1;
+
+    for()
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Program 
 // let nums1 = [1,2,3,0,0,0];
 
@@ -77,28 +106,28 @@
 // console.log("My arr1 is here",arr1);
 
 
-let nums1 = [1,2,3];
-let nums2 = [2,5,7];
+// let nums1 = [1,2,3];
+// let nums2 = [2,5,7];
 
-function merge(nums1, m, nums2, n){
+// function merge(nums1, m, nums2, n){
     
-    let nums1Copy = nums1.slice(0,m);    
-    let p1 = 0;
-    let p2 = 0;
+//     let nums1Copy = nums1.slice(0,m);    
+//     let p1 = 0;
+//     let p2 = 0;
 
-    for(let i = 0; i < m+n; i++){
-        if(( p2 >= n || p1 < m && nums1Copy[p1] < nums2[p2])){
-            nums1[i] = nums1Copy[p1];
-            p1++;
-        }
-        else{
-            nums1[i] = nums2[p2];
-            p2++;
-        }
-    }
-    return nums1;
+//     for(let i = 0; i < m+n; i++){
+//         if(( p2 >= n || p1 < m && nums1Copy[p1] < nums2[p2])){
+//             nums1[i] = nums1Copy[p1];
+//             p1++;
+//         }
+//         else{
+//             nums1[i] = nums2[p2];
+//             p2++;
+//         }
+//     }
+//     return nums1;
 
-}
+// }
 
-let resu = merge(nums1, 3, nums2, 3);
-console.log(resu);
+// let resu = merge(nums1, 3, nums2, 3);
+// console.log(resu);
